@@ -1,0 +1,1654 @@
+{
+  "evaluated_at": "2026-05-24T11:50:06.079973+00:00",
+  "k": 1,
+  "gold_path": "C:\\repos\\‏‏ai_course\\eval\\gold_set.jsonl",
+  "limit": null,
+  "config": {
+    "chunking_strategy": "paragraph_window",
+    "chunk_size_words": 2000,
+    "chunk_overlap_words": 200,
+    "embedding_model": "gemini-embedding-001",
+    "top_k": 1
+  },
+  "summary": {
+    "count": 100,
+    "hit_at_k": 0.62,
+    "mrr": 0.62,
+    "recall_at_k": 0.62,
+    "by_category": {
+      "comparison": {
+        "count": 20,
+        "hit_at_k": 0.35,
+        "mrr": 0.35,
+        "recall_at_k": 0.35
+      },
+      "factual": {
+        "count": 20,
+        "hit_at_k": 0.7,
+        "mrr": 0.7,
+        "recall_at_k": 0.7
+      },
+      "negation / absence": {
+        "count": 20,
+        "hit_at_k": 0.55,
+        "mrr": 0.55,
+        "recall_at_k": 0.55
+      },
+      "numerical": {
+        "count": 20,
+        "hit_at_k": 0.7,
+        "mrr": 0.7,
+        "recall_at_k": 0.7
+      },
+      "temporal": {
+        "count": 20,
+        "hit_at_k": 0.8,
+        "mrr": 0.8,
+        "recall_at_k": 0.8
+      }
+    }
+  },
+  "failures_count": 38,
+  "examples": [
+    {
+      "question": "What two dominant antisemitic narrative categories did CyberWell identify after the Bondi Beach attack?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "3_2_2026_bondi_beach_report_cyberwell_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "3_2_2026_bondi_beach_report_cyberwell_chunk_0001"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "3_2_2026_bondi_beach_report_cyberwell_chunk_0000": null
+      }
+    },
+    {
+      "question": "How many views and user interactions did the Bondi Beach antisemitism dataset record?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "3_2_2026_bondi_beach_report_cyberwell_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "3_2_2026_bondi_beach_report_cyberwell_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "3_2_2026_bondi_beach_report_cyberwell_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Between which dates did CyberWell analyze Bondi Beach-related antisemitic content?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "3_2_2026_bondi_beach_report_cyberwell_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "3_2_2026_bondi_beach_report_cyberwell_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "3_2_2026_bondi_beach_report_cyberwell_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Does the Bondi report say Meta currently treats Conspiratorial Self-Victimisation as a policy violation?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "3_2_2026_bondi_beach_report_cyberwell_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "denial_conspiratorial_self_victimization_report_public_version_chunk_0005"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "3_2_2026_bondi_beach_report_cyberwell_chunk_0000": null
+      }
+    },
+    {
+      "question": "How many verified AI-generated antisemitic posts appear in CyberWell's January 2025–February 2026 dataset?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "ai_generated_antisemitism_cyberwell_12_5_2026_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "ai_generated_antisemitism_cyberwell_12_5_2026_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "ai_generated_antisemitism_cyberwell_12_5_2026_chunk_0000": 1
+      }
+    },
+    {
+      "question": "From which month did 98.4% of the AI-generated antisemitic posts in the dataset date?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "ai_generated_antisemitism_cyberwell_12_5_2026_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "ai_generated_antisemitism_cyberwell_12_5_2026_chunk_0005"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "ai_generated_antisemitism_cyberwell_12_5_2026_chunk_0000": null
+      }
+    },
+    {
+      "question": "Does the AI-generated antisemitism report state that national AI governance frameworks adequately cover hate on social media?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "ai_generated_antisemitism_cyberwell_12_5_2026_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "ai_generated_antisemitism_cyberwell_12_5_2026_chunk_0007"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "ai_generated_antisemitism_cyberwell_12_5_2026_chunk_0000": null
+      }
+    },
+    {
+      "question": "How do TikTok and X removal rates for AI-generated antisemitic content compare in this report?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "ai_generated_antisemitism_cyberwell_12_5_2026_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "ai_generated_antisemitism_cyberwell_12_5_2026_chunk_0002"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "ai_generated_antisemitism_cyberwell_12_5_2026_chunk_0000": null
+      }
+    },
+    {
+      "question": "When did CyberWell launch its open database of online antisemitic content?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "annual_report_the_state_of_online_antisemitism_in_2022_chunk_0001"
+      ],
+      "retrieved_chunk_ids": [
+        "online_antisemitism_2023_annual_report_chunk_0000"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "annual_report_the_state_of_online_antisemitism_in_2022_chunk_0001": null
+      }
+    },
+    {
+      "question": "Does the 2022 annual report treat visibility restriction alone as sufficient for antisemitic tweets that violate rules?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "annual_report_the_state_of_online_antisemitism_in_2022_chunk_0004"
+      ],
+      "retrieved_chunk_ids": [
+        "data_insights_the_state_of_antisemitism_on_twitter_chunk_0000"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "annual_report_the_state_of_online_antisemitism_in_2022_chunk_0004": null
+      }
+    },
+    {
+      "question": "How does platform enforcement under copyright or regulatory pressure compare to routine antisemitism removal in the 2022 report?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "annual_report_the_state_of_online_antisemitism_in_2022_chunk_0002"
+      ],
+      "retrieved_chunk_ids": [
+        "annual_report_the_state_of_online_antisemitism_in_2022_chunk_0002"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "annual_report_the_state_of_online_antisemitism_in_2022_chunk_0002": 1
+      }
+    },
+    {
+      "question": "What was one major narrative CyberWell tracked after Ye's October–November 2022 statements?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "annual_report_the_state_of_online_antisemitism_in_2022_chunk_0003"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_alert_online_antisemitism_spikes_in_response_to_ye_chunk_0000"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "annual_report_the_state_of_online_antisemitism_in_2022_chunk_0003": null
+      }
+    },
+    {
+      "question": "What percentage of election-related antisemitic posts in the dataset were on X?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "antisemitism_online_amid_national_elections_2024_2025_chunk_0001"
+      ],
+      "retrieved_chunk_ids": [
+        "antisemitism_online_amid_national_elections_2024_2025_chunk_0001"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "antisemitism_online_amid_national_elections_2024_2025_chunk_0001": 1
+      }
+    },
+    {
+      "question": "Over what period did CyberWell collect antisemitic election-related content for the four-country report?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "antisemitism_online_amid_national_elections_2024_2025_chunk_0001"
+      ],
+      "retrieved_chunk_ids": [
+        "antisemitism_online_amid_national_elections_2024_2025_chunk_0001"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "antisemitism_online_amid_national_elections_2024_2025_chunk_0001": 1
+      }
+    },
+    {
+      "question": "Does the elections report claim that most violative election-related posts were removed in real time?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "antisemitism_online_amid_national_elections_2024_2025_chunk_0001"
+      ],
+      "retrieved_chunk_ids": [
+        "antisemitism_online_amid_national_elections_2024_2025_chunk_0001"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "antisemitism_online_amid_national_elections_2024_2025_chunk_0001": 1
+      }
+    },
+    {
+      "question": "How does U.S. election content's share of views compare to its share of posts in the dataset?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "antisemitism_online_amid_national_elections_2024_2025_chunk_0001"
+      ],
+      "retrieved_chunk_ids": [
+        "online_antisemitic_election_narratives_2024_u_s_elections_chunk_0000"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "antisemitism_online_amid_national_elections_2024_2025_chunk_0001": null
+      }
+    },
+    {
+      "question": "What is the focus of CyberWell's October 7 trend alert report?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How many October 7 denial posts are in the trend alert dataset and what share were removed?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Ahead of which date did CyberWell publish its October 7 denial trend alert analysis?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How does X's removal rate for October 7 denial content compare to the dataset average?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0003"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0000": null
+      }
+    },
+    {
+      "question": "How many Holocaust denial and distortion posts did CyberWell detect on Meta platforms in its Oversight Board submission?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_holocaust_denial_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_holocaust_denial_1_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_holocaust_denial_1_chunk_0000": 1
+      }
+    },
+    {
+      "question": "What percentage of the Holocaust denial Meta dataset was removed after CyberWell reported it?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_holocaust_denial_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_holocaust_denial_1_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_holocaust_denial_1_chunk_0000": 1
+      }
+    },
+    {
+      "question": "When did Meta update its hate speech policy to prohibit Holocaust denial and distortion?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_holocaust_denial_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_holocaust_denial_1_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_holocaust_denial_1_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Does CyberWell's Holocaust denial Meta submission report high removal rates for Holocaust denial posts?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_holocaust_denial_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_holocaust_denial_1_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_holocaust_denial_1_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How many major antisemitic narratives did CyberWell identify during Ye's October–November 2022 spike?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "cyberwell_alert_online_antisemitism_spikes_in_response_to_ye_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_alert_online_antisemitism_spikes_in_response_to_ye_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_alert_online_antisemitism_spikes_in_response_to_ye_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Approximately how many times was #TheNoticing mentioned on Twitter over three weeks starting October 27, 2022?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "cyberwell_alert_online_antisemitism_spikes_in_response_to_ye_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "annual_report_the_state_of_online_antisemitism_in_2022_chunk_0003"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "cyberwell_alert_online_antisemitism_spikes_in_response_to_ye_chunk_0000": null
+      }
+    },
+    {
+      "question": "During which months did CyberWell identify the Ye-related antisemitism spike?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "cyberwell_alert_online_antisemitism_spikes_in_response_to_ye_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_alert_online_antisemitism_spikes_in_response_to_ye_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_alert_online_antisemitism_spikes_in_response_to_ye_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Does the Ye alert claim that saying 'Kanye is right' alone always violates platform policies?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "cyberwell_alert_online_antisemitism_spikes_in_response_to_ye_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "annual_report_the_state_of_online_antisemitism_in_2022_chunk_0003"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "cyberwell_alert_online_antisemitism_spikes_in_response_to_ye_chunk_0000": null
+      }
+    },
+    {
+      "question": "What was TikTok's antisemitic content removal rate in 2025 according to CyberWell?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "cyberwell_annual_report_2025_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "online_antisemitism_2024_annual_report_1_chunk_0000"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "cyberwell_annual_report_2025_chunk_0000": null
+      }
+    },
+    {
+      "question": "How did X's removal rate change from 2024 to 2025?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "cyberwell_annual_report_2025_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_annual_report_2025_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_annual_report_2025_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Does the 2025 annual report say most platforms explicitly prohibit standalone scapegoating narratives?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "cyberwell_annual_report_2025_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_annual_report_2025_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_annual_report_2025_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How does removal of Conspiratorial Self-Victimisation compare to removal of classic world-domination tropes?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "cyberwell_annual_report_2025_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "denial_conspiratorial_self_victimization_report_public_version_chunk_0002"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "cyberwell_annual_report_2025_chunk_0000": null
+      }
+    },
+    {
+      "question": "What symbol does CyberWell highlight regarding dangerous organizations in its Meta Oversight Board comment?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_meta_oversight_board_cases_involving_symbols_adopted_by_dangerous_organizations_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_meta_oversight_board_cases_involving_symbols_adopted_by_dangerous_organizations_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_meta_oversight_board_cases_involving_symbols_adopted_by_dangerous_organizations_chunk_0000": 1
+      }
+    },
+    {
+      "question": "When were CyberWell's comments on Meta cases involving symbols adopted by dangerous organizations submitted?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_meta_oversight_board_cases_involving_symbols_adopted_by_dangerous_organizations_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_meta_oversight_board_cases_involving_symbols_adopted_by_dangerous_organizations_chunk_0001"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_meta_oversight_board_cases_involving_symbols_adopted_by_dangerous_organizations_chunk_0000": null
+      }
+    },
+    {
+      "question": "Does CyberWell's symbols policy comment argue that innocuous symbols cannot be abused for antisemitic targeting?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_meta_oversight_board_cases_involving_symbols_adopted_by_dangerous_organizations_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_meta_oversight_board_cases_involving_symbols_adopted_by_dangerous_organizations_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_meta_oversight_board_cases_involving_symbols_adopted_by_dangerous_organizations_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How does CyberWell compare the inverted red triangle to other protest symbols in the Meta comment?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_meta_oversight_board_cases_involving_symbols_adopted_by_dangerous_organizations_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_meta_oversight_board_cases_involving_symbols_adopted_by_dangerous_organizations_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_meta_oversight_board_cases_involving_symbols_adopted_by_dangerous_organizations_chunk_0000": 1
+      }
+    },
+    {
+      "question": "What phrase is the subject of CyberWell's May 2024 Meta Oversight Board policy comment?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_2_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_holocaust_denial_1_chunk_0000"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_2_chunk_0000": null
+      }
+    },
+    {
+      "question": "On what date were CyberWell's comments on 'From the River to the Sea' submitted to the Oversight Board?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_2_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_2_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_2_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Does CyberWell argue the phrase always violates Meta policy without any additional context?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_2_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_meta_oversight_board_cases_involving_symbols_adopted_by_dangerous_organizations_chunk_0001"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_2_chunk_0000": null
+      }
+    },
+    {
+      "question": "What prior Meta precedent does CyberWell cite for treating high-risk phrases similarly to 'From the River to the Sea'?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_2_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_2_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_on_2_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How many Facebook posts containing shaheed did CyberWell examine for the Meta policy comment?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_shaheed_and_designated_dangerous_individuals_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_shaheed_and_designated_dangerous_individuals_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_shaheed_and_designated_dangerous_individuals_chunk_0000": 1
+      }
+    },
+    {
+      "question": "When were CyberWell's comments on Meta's 'Shaheed' policy advisory opinion submitted?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_shaheed_and_designated_dangerous_individuals_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_shaheed_and_designated_dangerous_individuals_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_shaheed_and_designated_dangerous_individuals_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Does CyberWell's shaheed comment recommend loosening enforcement on posts praising terrorists who are not linked to a recognized FTO?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_shaheed_and_designated_dangerous_individuals_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_shaheed_and_designated_dangerous_individuals_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_shaheed_and_designated_dangerous_individuals_chunk_0000": 1
+      }
+    },
+    {
+      "question": "What does the Arabic term shaheed literally mean in CyberWell's Meta comment?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_shaheed_and_designated_dangerous_individuals_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_shaheed_and_designated_dangerous_individuals_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "cyberwell_policy_recommendations_regarding_metas_policy_advisory_opinion_request_shaheed_and_designated_dangerous_individuals_chunk_0000": 1
+      }
+    },
+    {
+      "question": "What percentage of confirmed antisemitic tweets in CyberWell's Twitter dataset violated Twitter's rules?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "data_insights_the_state_of_antisemitism_on_twitter_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "data_insights_the_state_of_antisemitism_on_twitter_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "data_insights_the_state_of_antisemitism_on_twitter_chunk_0000": 1
+      }
+    },
+    {
+      "question": "What was the Twitter test period covered in CyberWell's data insights report?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "data_insights_the_state_of_antisemitism_on_twitter_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "data_insights_the_state_of_antisemitism_on_twitter_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "data_insights_the_state_of_antisemitism_on_twitter_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Does the Twitter data insights report state that removal before CyberWell reporting exceeded removal after reporting?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "data_insights_the_state_of_antisemitism_on_twitter_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "data_insights_the_state_of_antisemitism_on_twitter_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "data_insights_the_state_of_antisemitism_on_twitter_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How does IHRA Type 2 prevalence compare to Type 3 in the Twitter dataset?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "data_insights_the_state_of_antisemitism_on_twitter_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "data_insights_the_state_of_antisemitism_on_twitter_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "data_insights_the_state_of_antisemitism_on_twitter_chunk_0000": 1
+      }
+    },
+    {
+      "question": "What monitoring window does the denial and conspiratorial self-victimization report cover?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "denial_conspiratorial_self_victimization_report_public_version_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "denial_conspiratorial_self_victimization_report_public_version_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "denial_conspiratorial_self_victimization_report_public_version_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How many verified posts are in the denial and CSV report dataset?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "denial_conspiratorial_self_victimization_report_public_version_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "denial_conspiratorial_self_victimization_report_public_version_chunk_0003"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "denial_conspiratorial_self_victimization_report_public_version_chunk_0000": null
+      }
+    },
+    {
+      "question": "Does the denial/CSV report say TikTok is the only platform that prohibits all forms of conspiratorial self-victimization?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "denial_conspiratorial_self_victimization_report_public_version_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "denial_conspiratorial_self_victimization_report_public_version_chunk_0005"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "denial_conspiratorial_self_victimization_report_public_version_chunk_0000": null
+      }
+    },
+    {
+      "question": "How does overall removal of policy-violating denial/CSV posts compare to CyberWell's 2024 annual average?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "denial_conspiratorial_self_victimization_report_public_version_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "online_antisemitism_2024_annual_report_1_chunk_0000"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "denial_conspiratorial_self_victimization_report_public_version_chunk_0000": null
+      }
+    },
+    {
+      "question": "What event anchors CyberWell's November 2023 trending narratives report?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "israel_hamas_war_november_2023_trending_antisemitic_narratives_calls_to_violence_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "israel_hamas_war_november_2023_trending_antisemitic_narratives_calls_to_violence_1_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "israel_hamas_war_november_2023_trending_antisemitic_narratives_calls_to_violence_1_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Which trending hashtag promoting antisemitism appears in the Israel–Hamas war narratives report?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "israel_hamas_war_november_2023_trending_antisemitic_narratives_calls_to_violence_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "israel_hamas_war_november_2023_trending_antisemitic_narratives_calls_to_violence_1_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "israel_hamas_war_november_2023_trending_antisemitic_narratives_calls_to_violence_1_chunk_0000": 1
+      }
+    },
+    {
+      "question": "What date does the Israel–Hamas war trends report reference for the Hamas terror attacks?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "israel_hamas_war_november_2023_trending_antisemitic_narratives_calls_to_violence_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "israel_hamas_war_november_2023_trending_antisemitic_narratives_calls_to_violence_1_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "israel_hamas_war_november_2023_trending_antisemitic_narratives_calls_to_violence_1_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Does the November 2023 war trends report list denial of violence against civilians as a narrative category?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "israel_hamas_war_november_2023_trending_antisemitic_narratives_calls_to_violence_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0003"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "israel_hamas_war_november_2023_trending_antisemitic_narratives_calls_to_violence_1_chunk_0000": null
+      }
+    },
+    {
+      "question": "What share of antisemitic English YouTube videos in the monetization study included ads?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "monetized_antisemitism_on_youtube_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "monetized_antisemitism_on_youtube_1_chunk_0002"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "monetized_antisemitism_on_youtube_1_chunk_0000": null
+      }
+    },
+    {
+      "question": "During which months did CyberWell study monetized antisemitism on YouTube?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "monetized_antisemitism_on_youtube_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "monetized_antisemitism_on_youtube_1_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "monetized_antisemitism_on_youtube_1_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Does the YouTube monetization report say over half of user-reported antisemitic videos were removed?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "monetized_antisemitism_on_youtube_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "monetized_antisemitism_on_youtube_1_chunk_0002"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "monetized_antisemitism_on_youtube_1_chunk_0000": null
+      }
+    },
+    {
+      "question": "How does the ad rate for Arabic antisemitic videos compare to English ones?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "monetized_antisemitism_on_youtube_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "monetized_antisemitism_on_youtube_1_chunk_0002"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "monetized_antisemitism_on_youtube_1_chunk_0000": null
+      }
+    },
+    {
+      "question": "How many posts are in CyberWell's October 7 sexual violence denial dataset?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "october_7_denial_the_online_attempt_to_erase_mass_sexual_violence_against_israeli_women_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "october_7_denial_the_online_attempt_to_erase_mass_sexual_violence_against_israeli_women_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "october_7_denial_the_online_attempt_to_erase_mass_sexual_violence_against_israeli_women_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How does the language breakdown of the October 7 sexual violence denial dataset compare between English and Arabic posts?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "october_7_denial_the_online_attempt_to_erase_mass_sexual_violence_against_israeli_women_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "october_7_denial_the_online_attempt_to_erase_mass_sexual_violence_against_israeli_women_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "october_7_denial_the_online_attempt_to_erase_mass_sexual_violence_against_israeli_women_chunk_0000": 1
+      }
+    },
+    {
+      "question": "On what occasion did CyberWell publish the sexual violence denial alert?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "october_7_denial_the_online_attempt_to_erase_mass_sexual_violence_against_israeli_women_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "october_7_denial_the_online_attempt_to_erase_mass_sexual_violence_against_israeli_women_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "october_7_denial_the_online_attempt_to_erase_mass_sexual_violence_against_israeli_women_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Does the October 7 sexual violence denial brief claim platforms already remove denial content at scale?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "october_7_denial_the_online_attempt_to_erase_mass_sexual_violence_against_israeli_women_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "october_7_denial_the_online_attempt_to_erase_mass_sexual_violence_against_israeli_women_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "october_7_denial_the_online_attempt_to_erase_mass_sexual_violence_against_israeli_women_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How many antisemitic U.S. election posts are in CyberWell's 2024 election report dataset?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "online_antisemitic_election_narratives_2024_u_s_elections_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "online_antisemitic_election_narratives_2024_u_s_elections_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "online_antisemitic_election_narratives_2024_u_s_elections_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How does the 2024 U.S. election antisemitism dataset removal rate compare to CyberWell's 2023 annual report average?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "online_antisemitic_election_narratives_2024_u_s_elections_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "online_antisemitism_2024_annual_report_1_chunk_0000"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "online_antisemitic_election_narratives_2024_u_s_elections_chunk_0000": null
+      }
+    },
+    {
+      "question": "When was U.S. Election Day in the report's 2024 study?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "online_antisemitic_election_narratives_2024_u_s_elections_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "online_antisemitic_election_narratives_2024_u_s_elections_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "online_antisemitic_election_narratives_2024_u_s_elections_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Which platform hosted the majority of U.S. election antisemitic posts?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "online_antisemitic_election_narratives_2024_u_s_elections_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "antisemitism_online_amid_national_elections_2024_2025_chunk_0001"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "online_antisemitic_election_narratives_2024_u_s_elections_chunk_0000": null
+      }
+    },
+    {
+      "question": "What was the average cross-platform removal rate for antisemitism in 2023?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "online_antisemitism_2023_annual_report_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "online_antisemitism_2024_annual_report_1_chunk_0000"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "online_antisemitism_2023_annual_report_chunk_0000": null
+      }
+    },
+    {
+      "question": "What share of Arabic antisemitic content called for or justified violence against Jews in the month after October 7?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "online_antisemitism_2023_annual_report_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "israel_hamas_war_november_2023_trending_antisemitic_narratives_calls_to_violence_1_chunk_0001"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "online_antisemitism_2023_annual_report_chunk_0000": null
+      }
+    },
+    {
+      "question": "Since when has CyberWell monitored the major platforms in English and Arabic per the 2023 summary?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "online_antisemitism_2023_annual_report_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "online_antisemitism_2023_annual_report_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "online_antisemitism_2023_annual_report_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How did IHRA discourse in Arabic shift from the month before to the month after October 7?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "online_antisemitism_2023_annual_report_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0001"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "online_antisemitism_2023_annual_report_chunk_0000": null
+      }
+    },
+    {
+      "question": "What was the overall removal rate for antisemitism in 2024?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "online_antisemitism_2024_annual_report_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "cyberwell_annual_report_2025_chunk_0000"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "online_antisemitism_2024_annual_report_1_chunk_0000": null
+      }
+    },
+    {
+      "question": "When did Meta formally update policy to treat 'Zionist' as a proxy for 'Jew' in certain antisemitic contexts?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "online_antisemitism_2024_annual_report_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "report_the_judeo_masonic_conspiracy_theory_on_meta_chunk_0001"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "online_antisemitism_2024_annual_report_1_chunk_0000": null
+      }
+    },
+    {
+      "question": "Does the 2024 annual infographic claim TikTok still allows October 7 massacre denial?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "online_antisemitism_2024_annual_report_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0002"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "online_antisemitism_2024_annual_report_1_chunk_0000": null
+      }
+    },
+    {
+      "question": "How did online antisemitism change in the three weeks after October 7 versus the prior trend?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "online_antisemitism_2024_annual_report_1_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "the_evolution_of_online_antisemitism_pre_post_october_7_chunk_0000"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "online_antisemitism_2024_annual_report_1_chunk_0000": null
+      }
+    },
+    {
+      "question": "What is the topic of CyberWell's Yom HaShoah 2023 Holocaust denial social media report?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "report_holocaust_denial_and_distortion_on_social_media_yom_hashoah_2023_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "report_holocaust_denial_and_distortion_on_social_media_yom_hashoah_2023_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "report_holocaust_denial_and_distortion_on_social_media_yom_hashoah_2023_chunk_0000": 1
+      }
+    },
+    {
+      "question": "When was the Yom HaShoah 2023 Holocaust denial report published relative to Holocaust Remembrance Day?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "report_holocaust_denial_and_distortion_on_social_media_yom_hashoah_2023_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "report_holocaust_denial_and_distortion_on_social_media_yom_hashoah_2023_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "report_holocaust_denial_and_distortion_on_social_media_yom_hashoah_2023_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Does the Yom HaShoah 2023 Holocaust report claim platforms remove most Holocaust denial equally in Arabic and English?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "report_holocaust_denial_and_distortion_on_social_media_yom_hashoah_2023_chunk_0001"
+      ],
+      "retrieved_chunk_ids": [
+        "report_holocaust_denial_and_distortion_on_social_media_yom_hashoah_2023_chunk_0000"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "report_holocaust_denial_and_distortion_on_social_media_yom_hashoah_2023_chunk_0001": null
+      }
+    },
+    {
+      "question": "How does enforcement of Holocaust denial on Facebook compare to expectations for protected-group hate?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "report_holocaust_denial_and_distortion_on_social_media_yom_hashoah_2023_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "report_holocaust_denial_and_distortion_on_social_media_yom_hashoah_2023_chunk_0001"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "report_holocaust_denial_and_distortion_on_social_media_yom_hashoah_2023_chunk_0000": null
+      }
+    },
+    {
+      "question": "What conspiracy theory does CyberWell's June 2023 Meta report examine?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "report_the_judeo_masonic_conspiracy_theory_on_meta_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "report_the_judeo_masonic_conspiracy_theory_on_meta_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "report_the_judeo_masonic_conspiracy_theory_on_meta_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How many English posts did CyberWell collect for the Judeo-Masonic Meta study?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "report_the_judeo_masonic_conspiracy_theory_on_meta_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "report_the_judeo_masonic_conspiracy_theory_on_meta_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "report_the_judeo_masonic_conspiracy_theory_on_meta_chunk_0000": 1
+      }
+    },
+    {
+      "question": "When was modern Freemasonry officially established according to the Judeo-Masonic report?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "report_the_judeo_masonic_conspiracy_theory_on_meta_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "report_the_judeo_masonic_conspiracy_theory_on_meta_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "report_the_judeo_masonic_conspiracy_theory_on_meta_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Does the Judeo-Masonic report claim Freemasonry openly welcomes all Jews into lodges?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "report_the_judeo_masonic_conspiracy_theory_on_meta_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "report_the_judeo_masonic_conspiracy_theory_on_meta_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "report_the_judeo_masonic_conspiracy_theory_on_meta_chunk_0000": 1
+      }
+    },
+    {
+      "question": "By what percentage did flagged antisemitic posts increase in the 11 months after October 7 versus before?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "the_evolution_of_online_antisemitism_pre_post_october_7_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "the_evolution_of_online_antisemitism_pre_post_october_7_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "the_evolution_of_online_antisemitism_pre_post_october_7_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How does the three-week post-October 7 antisemitism spike compare to the 11-month post-October 7 increase?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "the_evolution_of_online_antisemitism_pre_post_october_7_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "the_evolution_of_online_antisemitism_pre_post_october_7_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "the_evolution_of_online_antisemitism_pre_post_october_7_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Which narrative became most prevalent after October 7 in CyberWell's vetted content?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "the_evolution_of_online_antisemitism_pre_post_october_7_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "antisemitism_trend_alert_denial_of_the_october_7_massacre_on_social_media_platforms_1_chunk_0000"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "the_evolution_of_online_antisemitism_pre_post_october_7_chunk_0000": null
+      }
+    },
+    {
+      "question": "How did Meta and TikTok policy on the term 'Zionist' change after CyberWell's audit?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "the_evolution_of_online_antisemitism_pre_post_october_7_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "online_antisemitism_2024_annual_report_1_chunk_0000"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "the_evolution_of_online_antisemitism_pre_post_october_7_chunk_0000": null
+      }
+    },
+    {
+      "question": "Does the Royal Commission submission claim that online antisemitism has no connection to offline harm against Jewish communities?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "the_evolution_of_online_antisemitism_report_for_the_royal_commission_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "the_evolution_of_online_antisemitism_report_for_the_royal_commission_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "the_evolution_of_online_antisemitism_report_for_the_royal_commission_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How many pieces of content has CyberWell fully vetted and reported to platforms per the Royal Commission submission?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "the_evolution_of_online_antisemitism_report_for_the_royal_commission_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "the_evolution_of_online_antisemitism_report_for_the_royal_commission_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "the_evolution_of_online_antisemitism_report_for_the_royal_commission_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Does the Royal Commission report state that CyberWell was founded after the October 7, 2023 attacks?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "the_evolution_of_online_antisemitism_report_for_the_royal_commission_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "the_evolution_of_online_antisemitism_report_for_the_royal_commission_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "the_evolution_of_online_antisemitism_report_for_the_royal_commission_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Does the Royal Commission report claim only historical antisemitic tropes appear online with no event-driven dynamics?",
+      "category": "negation / absence",
+      "must_cite_chunk_ids": [
+        "the_evolution_of_online_antisemitism_report_for_the_royal_commission_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "the_evolution_of_online_antisemitism_report_for_the_royal_commission_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "the_evolution_of_online_antisemitism_report_for_the_royal_commission_chunk_0000": 1
+      }
+    },
+    {
+      "question": "On which platform did antisemitic narratives spread during Ye's February 2025 rant?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "yes_online_antisemitic_rants_2025_vs_2022_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "yes_online_antisemitic_rants_2025_vs_2022_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "yes_online_antisemitic_rants_2025_vs_2022_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How many posts promoted 'Jews did 9/11' on February 9, 2025 during Ye's rant?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "yes_online_antisemitic_rants_2025_vs_2022_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "yes_online_antisemitic_rants_2025_vs_2022_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "yes_online_antisemitic_rants_2025_vs_2022_chunk_0000": 1
+      }
+    },
+    {
+      "question": "When did Ye post his 2025 antisemitic rant on X?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "yes_online_antisemitic_rants_2025_vs_2022_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "yes_online_antisemitic_rants_2025_vs_2022_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "yes_online_antisemitic_rants_2025_vs_2022_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How did the 2025 Ye episode differ from 2022 in cross-platform spread?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "yes_online_antisemitic_rants_2025_vs_2022_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "yes_online_antisemitic_rants_2025_vs_2022_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "yes_online_antisemitic_rants_2025_vs_2022_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How many Holocaust hate speech posts did CyberWell analyze ahead of Yom HaShoah 2024?",
+      "category": "factual",
+      "must_cite_chunk_ids": [
+        "yom_hashoah_2024_online_holocaust_hate_speech_narratives_and_trends_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "yom_hashoah_2024_online_holocaust_hate_speech_narratives_and_trends_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "yom_hashoah_2024_online_holocaust_hate_speech_narratives_and_trends_chunk_0000": 1
+      }
+    },
+    {
+      "question": "What total views did the Yom HaShoah 2024 Holocaust hate speech dataset receive?",
+      "category": "numerical",
+      "must_cite_chunk_ids": [
+        "yom_hashoah_2024_online_holocaust_hate_speech_narratives_and_trends_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "yom_hashoah_2024_online_holocaust_hate_speech_narratives_and_trends_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "yom_hashoah_2024_online_holocaust_hate_speech_narratives_and_trends_chunk_0000": 1
+      }
+    },
+    {
+      "question": "Between which months were Yom HaShoah 2024 Holocaust hate speech posts collected?",
+      "category": "temporal",
+      "must_cite_chunk_ids": [
+        "yom_hashoah_2024_online_holocaust_hate_speech_narratives_and_trends_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "yom_hashoah_2024_online_holocaust_hate_speech_narratives_and_trends_chunk_0000"
+      ],
+      "hit": true,
+      "mrr": 1.0,
+      "recall": 1.0,
+      "gold_ranks": {
+        "yom_hashoah_2024_online_holocaust_hate_speech_narratives_and_trends_chunk_0000": 1
+      }
+    },
+    {
+      "question": "How does removal of English Holocaust hate speech compare to Arabic posts in the Yom HaShoah 2024 dataset?",
+      "category": "comparison",
+      "must_cite_chunk_ids": [
+        "yom_hashoah_2024_online_holocaust_hate_speech_narratives_and_trends_chunk_0000"
+      ],
+      "retrieved_chunk_ids": [
+        "report_holocaust_denial_and_distortion_on_social_media_yom_hashoah_2023_chunk_0000"
+      ],
+      "hit": false,
+      "mrr": 0.0,
+      "recall": 0.0,
+      "gold_ranks": {
+        "yom_hashoah_2024_online_holocaust_hate_speech_narratives_and_trends_chunk_0000": null
+      }
+    }
+  ]
+}

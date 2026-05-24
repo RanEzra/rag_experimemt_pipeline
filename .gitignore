@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+data/processed/
+gcp_key.json
+*.egg-info/
+.pytest_cache/
+.chroma/
