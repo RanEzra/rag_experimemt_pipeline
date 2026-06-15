@@ -3,6 +3,9 @@
 RAG over CyberWell research PDFs in `data/raw/`. Answers are grounded in retrieved chunks with inline citations.
 
 ## Setup
+```git clone
+git clone https://github.com/RanEzra/rag_experimemt_pipeline.git
+```
 
 ```bash
 pip install -r requirements.txt
